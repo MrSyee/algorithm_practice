@@ -3,7 +3,7 @@
 
 | idx | name                  | category | from                                          | answer | note |
 |:---:|-----------------------|----------|-----------------------------------------------|--------|------|
-|0    |3Sum                   |array     |[LeetCode](https://leetcode.com/problems/3sum/)|[Ans](array/three_sum) |-!    |
+|0    |3Sum                   |array     |[LeetCode](https://leetcode.com/problems/3sum/)|[Ans](https://github.com/MrSyee/algorithm_practice/blob/master/array/three_sum.py) |-!    |
 
 +: Solved within 30 min
 
