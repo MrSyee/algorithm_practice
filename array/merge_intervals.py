@@ -49,7 +49,6 @@ class Solution:
 
 
 class Solution:
-    # O(Nlog(N))/O(N)
     def merge(self, intervals: List[List[int]]) -> List[List[int]]:
         """O(Nlog(N))/O(N)"""
         sol = []
