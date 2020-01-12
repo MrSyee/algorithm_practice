@@ -30,11 +30,10 @@ class Solution:
 
 class Solution:
     def isHappy(self, n: int) -> bool:
-        """O(N^2)/O(N)"""
         prev = []
         while n not in prev:
             prev.append(n)
-            nums = [int(s)for s in str(n)]
+            nums = [int(s) for s in str(n)]
             if sum(nums) == 1:
                 return True
             n = sum([nn ** 2 for nn in nums])
