@@ -11,6 +11,7 @@
 |5    |Insert Delete GetRandom O(1)  |hash table     |[LeetCode](https://leetcode.com/problems/insert-delete-getrandom-o1/)|[Ans](https://github.com/MrSyee/algorithm_practice/blob/master/hash_table/insert_delete_get_random_O1.py) |+!    |
 |6    |Find Duplicate File in System  |hash table     |[LeetCode](https://leetcode.com/problems/find-duplicate-file-in-system/)|[Ans](https://github.com/MrSyee/algorithm_practice/blob/master/hash_table/find-duplicate-file-in-system.py) |+    |
 |7    |Search in Rotated Sorted Array  |search    |[LeetCode](https://leetcode.com/problems/search-in-rotated-sorted-array/)|[Ans](https://github.com/MrSyee/algorithm_practice/blob/master/search/search-in-rotated-sorted-array.py) |-!    |
+|8    |Next Permutation  |array    |[LeetCode](https://leetcode.com/problems/next-permutation/)|[Ans](https://github.com/MrSyee/algorithm_practice/blob/master/array/next-permutation.py) |+!    |
 
 
 +: Solved within 1 hour
