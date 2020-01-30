@@ -12,7 +12,7 @@
 |6    |Find Duplicate File in System  |hash table     |[LeetCode](https://leetcode.com/problems/find-duplicate-file-in-system/)|[Ans](https://github.com/MrSyee/algorithm_practice/blob/master/hash_table/find-duplicate-file-in-system.py) |+    |
 |7    |Search in Rotated Sorted Array  |search    |[LeetCode](https://leetcode.com/problems/search-in-rotated-sorted-array/)|[Ans](https://github.com/MrSyee/algorithm_practice/blob/master/search/search-in-rotated-sorted-array.py) |-!    |
 |8    |Next Permutation  |array    |[LeetCode](https://leetcode.com/problems/next-permutation/)|[Ans](https://github.com/MrSyee/algorithm_practice/blob/master/array/next-permutation.py) |+!    |
-|9    |Trapping Rain Water  |search    |[LeetCode](https://leetcode.com/problems/trapping-rain-water/)|[Ans](https://github.com/MrSyee/algorithm_practice/blob/master/array/trapping-rain-water.py) |-!    |
+|9    |Trapping Rain Water  |array    |[LeetCode](https://leetcode.com/problems/trapping-rain-water/)|[Ans](https://github.com/MrSyee/algorithm_practice/blob/master/array/trapping-rain-water.py) |-!    |
 
 
 +: Solved within 1 hour
