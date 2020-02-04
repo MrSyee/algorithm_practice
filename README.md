@@ -13,6 +13,7 @@
 |7    |Search in Rotated Sorted Array  |search    |[LeetCode](https://leetcode.com/problems/search-in-rotated-sorted-array/)|[Ans](https://github.com/MrSyee/algorithm_practice/blob/master/search/search-in-rotated-sorted-array.py) |-!    |
 |8    |Next Permutation  |array    |[LeetCode](https://leetcode.com/problems/next-permutation/)|[Ans](https://github.com/MrSyee/algorithm_practice/blob/master/array/next-permutation.py) |+!    |
 |9    |Trapping Rain Water  |array    |[LeetCode](https://leetcode.com/problems/trapping-rain-water/)|[Ans](https://github.com/MrSyee/algorithm_practice/blob/master/array/trapping-rain-water.py) |-!    |
+|10    |Longest Palindromic Substring  |dp    |[LeetCode](https://leetcode.com/problems/longest-palindromic-substring/)|[Ans](https://github.com/MrSyee/algorithm_practice/blob/master/dp/longest-palindromic-substring.py) |-!    |
 
 
 +: Solved within 1 hour
