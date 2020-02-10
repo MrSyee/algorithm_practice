@@ -14,6 +14,7 @@
 |8    |Next Permutation  |array    |[LeetCode](https://leetcode.com/problems/next-permutation/)|[Ans](https://github.com/MrSyee/algorithm_practice/blob/master/array/next-permutation.py) |+!    |
 |9    |Trapping Rain Water  |array    |[LeetCode](https://leetcode.com/problems/trapping-rain-water/)|[Ans](https://github.com/MrSyee/algorithm_practice/blob/master/array/trapping-rain-water.py) |-!    |
 |10    |Longest Palindromic Substring  |dp    |[LeetCode](https://leetcode.com/problems/longest-palindromic-substring/)|[Ans](https://github.com/MrSyee/algorithm_practice/blob/master/dp/longest-palindromic-substring.py) |+    |
+|11    |Permutations  |dp    |[LeetCode](https://leetcode.com/problems/permutations/)|[Ans](https://github.com/MrSyee/algorithm_practice/blob/master/dp/permutations.py) |+!    |
 
 
 +: Solved within 1 hour
