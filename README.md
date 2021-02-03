@@ -15,6 +15,8 @@
 |9    |Trapping Rain Water  |array    |[LeetCode](https://leetcode.com/problems/trapping-rain-water/)|[Ans](https://github.com/MrSyee/algorithm_practice/blob/master/array/trapping-rain-water.py) |-!    |
 |10    |Longest Palindromic Substring  |dp    |[LeetCode](https://leetcode.com/problems/longest-palindromic-substring/)|[Ans](https://github.com/MrSyee/algorithm_practice/blob/master/dp/longest-palindromic-substring.py) |+    |
 |11    |Permutations  |dp    |[LeetCode](https://leetcode.com/problems/permutations/)|[Ans](https://github.com/MrSyee/algorithm_practice/blob/master/dp/permutations.py) |+!    |
+|12    |Latest Time by Replacing Hidden Digits  |greedy    |[LeetCode](https://leetcode.com/problems/latest-time-by-replacing-hidden-digits/)|[Ans](https://github.com/MrSyee/algorithm_practice/blob/master/greedy/latest-time-by-replacing-hidden-digits.py) |+    |
+|13    |Change Minimum Characters to Satisfy One of Three Conditions  |greedy    |[LeetCode](https://leetcode.com/contest/weekly-contest-225/problems/change-minimum-characters-to-satisfy-one-of-three-conditions/)|[Ans](https://github.com/MrSyee/algorithm_practice/blob/master/greedy/change-minimum-characters-to-satisfy-one-of-three-conditions.py) |-!    |
 
 
 +: Solved within 1 hour
