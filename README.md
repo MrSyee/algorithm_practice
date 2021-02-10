@@ -17,6 +17,8 @@
 |11    |Permutations  |dp    |[LeetCode](https://leetcode.com/problems/permutations/)|[Ans](https://github.com/MrSyee/algorithm_practice/blob/master/dp/permutations.py) |+!    |
 |12    |Latest Time by Replacing Hidden Digits  |greedy    |[LeetCode](https://leetcode.com/problems/latest-time-by-replacing-hidden-digits/)|[Ans](https://github.com/MrSyee/algorithm_practice/blob/master/greedy/latest-time-by-replacing-hidden-digits.py) |+    |
 |13    |Change Minimum Characters to Satisfy One of Three Conditions  |greedy    |[LeetCode](https://leetcode.com/contest/weekly-contest-225/problems/change-minimum-characters-to-satisfy-one-of-three-conditions/)|[Ans](https://github.com/MrSyee/algorithm_practice/blob/master/greedy/change-minimum-characters-to-satisfy-one-of-three-conditions.py) |-!    |
+|14    |Maximum Number of Balls in a Box  |array    |[LeetCode](https://leetcode.com/problems/maximum-number-of-balls-in-a-box/)|[Ans](https://github.com/MrSyee/algorithm_practice/blob/master/array/maximum-number-of-balls-in-a-box.py) |+    |
+|15    |Restore the Array From Adjacent Pairs  |dfs    |[LeetCode](https://leetcode.com/problems/restore-the-array-from-adjacent-pairs/)|[Ans](https://github.com/MrSyee/algorithm_practice/blob/master/greedy/restore-the-array-from-adjacent-pairs.py) |-!    |
 
 
 +: Solved within 1 hour
