@@ -1,14 +1,7 @@
 """
-Permutations (Medium)
+46. Permutations (Medium)
 https://leetcode.com/problems/permutations/
 
-2986
-
-92
-
-Add to List
-
-Share
 Given a collection of distinct integers, return all possible permutations.
 
 Example:
