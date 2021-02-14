@@ -39,6 +39,7 @@ def update_markdown(data_list):
         new_line += (
             f"|{data_dict['idx']}    "
             + f"|{data_dict['name']}  "
+            + f"|{data_dict['category']}    "
             + f"|[LeetCode]({data_dict['leetcode']})  "
             + f"|[Ans]({data_dict['answer']})  "
             + f"|    |\n"

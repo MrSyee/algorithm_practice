@@ -1,17 +1,17 @@
-idx,name,category,leetcode,answer
-0,3Sum,array,https://leetcode.com/problems/3sum/,https://github.com/MrSyee/algorithm_practice/blob/master/array/three_sum.py
-1,Merge Intervals,array,https://leetcode.com/problems/merge-intervals/,https://github.com/MrSyee/algorithm_practice/blob/master/array/merge_intervals.py
-2,Happy Number,hash table,https://leetcode.com/problems/happy-number/,https://github.com/MrSyee/algorithm_practice/blob/master/hash_table/happy_number.py
-3,Longest Substring Without Repeating Characters,hash table,https://leetcode.com/problems/longest-substring-without-repeating-characters/,https://github.com/MrSyee/algorithm_practice/blob/master/hash_table/longest_substring_without_repeating_chars.py
-4,Copy List with Random Pointer,hash table,https://leetcode.com/problems/copy-list-with-random-pointer/,https://github.com/MrSyee/algorithm_practice/blob/master/hash_table/copy_list_of_random_pointer.py
-5,Insert Delete GetRandom O(1),hash table,https://leetcode.com/problems/insert-delete-getrandom-o1/,https://github.com/MrSyee/algorithm_practice/blob/master/hash_table/insert_delete_get_random_O1.py
-6,Find Duplicate File in System,hash table,https://leetcode.com/problems/find-duplicate-file-in-system/,https://github.com/MrSyee/algorithm_practice/blob/master/hash_table/find-duplicate-file-in-system.py
-7,Search in Rotated Sorted Array,search,https://leetcode.com/problems/search-in-rotated-sorted-array/,https://github.com/MrSyee/algorithm_practice/blob/master/search/search-in-rotated-sorted-array.py
-8,Next Permutation,array,https://leetcode.com/problems/next-permutation/,https://github.com/MrSyee/algorithm_practice/blob/master/array/next-permutation.py
-9,Trapping Rain Water,array,https://leetcode.com/problems/trapping-rain-water/,https://github.com/MrSyee/algorithm_practice/blob/master/array/trapping-rain-water.py
-10,Longest Palindromic Substring,dp,https://leetcode.com/problems/longest-palindromic-substring/,https://github.com/MrSyee/algorithm_practice/blob/master/dp/longest-palindromic-substring.py
-11,Permutations,dp,https://leetcode.com/problems/permutations/,https://github.com/MrSyee/algorithm_practice/blob/master/dp/permutations.py
-12,Latest Time by Replacing Hidden Digits,greedy,https://leetcode.com/problems/latest-time-by-replacing-hidden-digits/,https://github.com/MrSyee/algorithm_practice/blob/master/greedy/latest-time-by-replacing-hidden-digits.py
-13,Change Minimum Characters to Satisfy One of Three Conditions,greedy,https://leetcode.com/contest/weekly-contest-225/problems/change-minimum-characters-to-satisfy-one-of-three-conditions/,https://github.com/MrSyee/algorithm_practice/blob/master/greedy/change-minimum-characters-to-satisfy-one-of-three-conditions.py
-14,Maximum Number of Balls in a Box,array,https://leetcode.com/problems/maximum-number-of-balls-in-a-box/,https://github.com/MrSyee/algorithm_practice/blob/master/array/maximum-number-of-balls-in-a-box.py
-15,Restore the Array From Adjacent Pairs,dfs,https://leetcode.com/problems/restore-the-array-from-adjacent-pairs,https://github.com/MrSyee/algorithm_practice/blob/master/dfs/restore-the-array-from-adjacent-pairs.py
+,name,category,leetcode,answer,idx
+0,3Sum,array,https://leetcode.com/problems/3sum/,https://github.com/MrSyee/algorithm_practice/blob/master/array/three_sum.py,
+1,Merge Intervals,array,https://leetcode.com/problems/merge-intervals/,https://github.com/MrSyee/algorithm_practice/blob/master/array/merge_intervals.py,
+2,Happy Number,hash table,https://leetcode.com/problems/happy-number/,https://github.com/MrSyee/algorithm_practice/blob/master/hash_table/happy_number.py,
+3,Longest Substring Without Repeating Characters,hash table,https://leetcode.com/problems/longest-substring-without-repeating-characters/,https://github.com/MrSyee/algorithm_practice/blob/master/hash_table/longest_substring_without_repeating_chars.py,
+4,Copy List with Random Pointer,hash table,https://leetcode.com/problems/copy-list-with-random-pointer/,https://github.com/MrSyee/algorithm_practice/blob/master/hash_table/copy_list_of_random_pointer.py,
+5,Insert Delete GetRandom O(1),hash table,https://leetcode.com/problems/insert-delete-getrandom-o1/,https://github.com/MrSyee/algorithm_practice/blob/master/hash_table/insert_delete_get_random_O1.py,
+6,Find Duplicate File in System,hash table,https://leetcode.com/problems/find-duplicate-file-in-system/,https://github.com/MrSyee/algorithm_practice/blob/master/hash_table/find-duplicate-file-in-system.py,
+7,Search in Rotated Sorted Array,search,https://leetcode.com/problems/search-in-rotated-sorted-array/,https://github.com/MrSyee/algorithm_practice/blob/master/search/search-in-rotated-sorted-array.py,
+8,Next Permutation,array,https://leetcode.com/problems/next-permutation/,https://github.com/MrSyee/algorithm_practice/blob/master/array/next-permutation.py,
+9,Trapping Rain Water,array,https://leetcode.com/problems/trapping-rain-water/,https://github.com/MrSyee/algorithm_practice/blob/master/array/trapping-rain-water.py,
+10,Longest Palindromic Substring,dp,https://leetcode.com/problems/longest-palindromic-substring/,https://github.com/MrSyee/algorithm_practice/blob/master/dp/longest-palindromic-substring.py,
+11,Permutations,dp,https://leetcode.com/problems/permutations/,https://github.com/MrSyee/algorithm_practice/blob/master/dp/permutations.py,
+12,Latest Time by Replacing Hidden Digits,greedy,https://leetcode.com/problems/latest-time-by-replacing-hidden-digits/,https://github.com/MrSyee/algorithm_practice/blob/master/greedy/latest-time-by-replacing-hidden-digits.py,
+13,Change Minimum Characters to Satisfy One of Three Conditions,greedy,https://leetcode.com/contest/weekly-contest-225/problems/change-minimum-characters-to-satisfy-one-of-three-conditions/,https://github.com/MrSyee/algorithm_practice/blob/master/greedy/change-minimum-characters-to-satisfy-one-of-three-conditions.py,
+14,Maximum Number of Balls in a Box,array,https://leetcode.com/problems/maximum-number-of-balls-in-a-box/,https://github.com/MrSyee/algorithm_practice/blob/master/array/maximum-number-of-balls-in-a-box.py,
+15,Restore the Array From Adjacent Pairs,dfs,https://leetcode.com/problems/restore-the-array-from-adjacent-pairs,https://github.com/MrSyee/algorithm_practice/blob/master/dfs/restore-the-array-from-adjacent-pairs.py,15.0
