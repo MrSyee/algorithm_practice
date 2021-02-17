@@ -26,41 +26,30 @@ Constraints:
 s​​​​​​ consists only of lowercase English letters.
 """
 
-from collections import defaultdict
-
+# T_C: O(N^2)
+# S_C: O(N^2)
 class Solution:
     def checkPartitioning(self, s: str) -> bool:
-        def is_pelindrom(string):
-            if len(string) % 2 == 0
-                mid = len(string) // 2 - 1
-                if string[0:mid] == string[::-mid]:
+        # O(N). len(s)^2 만큼의 배열 생성
+        is_palindrome = []
+        for _ in range(len(s)):
+            is_palindrome.append([False for _ in range(len(s))])
+        
+        # O(N). len 1, 2 pelindrome 여부 체크
+        for i in range(len(s)):
+            is_palindrome[i][i] = True
+            if i < len(s)- 1 and s[i] == s[i+1]:
+                is_palindrome[i][i+1] = True
+        
+        # O(N^2). len >= 3 pelindrome 여부 체크
+        for i in range(2, len(s)):
+            for j in range(len(s) - i):
+                if s[j] == s[j+i] and is_palindrome[j+1][j+i-1]:
+                    is_palindrome[j][j+i] = True
+        
+        # O(N^2). 문자열 분리 위치 찾기
+        for i in range(0, len(s)-2):
+            for j in range(1, len(s) - 1):
+                if is_palindrome[0][i] and is_palindrome[i+1][j] and is_palindrome[j+1][len(s)-1]:
                     return True
-                else:
-                    return False
-            else:
-                mid = len(string) // 2
-                if string[0:mid-1] == string[::-(mid-1)]:
-                    return True
-                else:
-                    return False
-        
-        pelindromes = defaultdict(list)
-        i = 0
-        for j in range(len(s)):
-            if i == j:
-                pelindrome[i].append(i)
-                continue
-            
-            if is_pelindrom(s[i:j]):
-                pelindromes[i].append(j)
-        
-        for ii in pelindromes[i]:
-            for j in range(len(s) - ii + 1):
-                if ii == j:
-                    pelindrome[ii].append(ii)
-                    continue
-
-                if is_pelindrom(s[ii:j]):
-                    pelindromes[ii].append(j) 
-            
-        
+        return False

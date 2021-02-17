@@ -44,9 +44,9 @@ Constraints:
 class Solution:
     def countBalls(self, lowLimit: int, highLimit: int) -> int:
         num_dict = {}
-        for num in range(lowLimit, highLimit + 1):
+        for num in range(lowLimit, highLimit + 1):  # O(H-L+1)
             s = 0
-            for n in str(num):  # 자리수 분해하여 덧셈
+            for n in str(num):  # O(log_10(num)). 자리수 분해하여 덧셈
                 s += int(n)
                 
             if s in num_dict:  # dict로 개수 계산

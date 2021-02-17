@@ -39,6 +39,8 @@ adjacentPairs[i].length == 2
 -10^5 <= nums[i], ui, vi <= 10^5
 There exists some nums that has adjacentPairs as its pairs.
 """
+# T_C: O(N)
+# S_C: O(N)
 class Solution:
     def restoreArray(self, adjacentPairs: List[List[int]]) -> List[int]:
         def add_to_dict(a_dict, key, val):
