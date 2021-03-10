@@ -25,3 +25,4 @@
 23,Minimum Limit of Balls in a Bag,search,https://leetcode.com/problems/minimum-limit-of-balls-in-a-bag,https://github.com/MrSyee/algorithm_practice/blob/master/search/minimum_limit_of_balls_in_a_bag.py,23.0
 24,Minimum Number of Operations to Move All Balls to Each Box,array,https://leetcode.com/problems/minimum-number-of-operations-to-move-all-balls-to-each-box,https://github.com/MrSyee/algorithm_practice/blob/master/array/minimum_number_of_operations_to_move_all_balls_to_each_box.py,24.0
 25,Merge Strings Alternately,string,https://leetcode.com/problems/merge-strings-alternately,https://github.com/MrSyee/algorithm_practice/blob/master/string/merge_strings_alternately.py,25.0
+26,Maximum Score from Performing Multiplication Operations,dfs,https://leetcode.com/problems/maximum-score-from-performing-multiplication-operations,https://github.com/MrSyee/algorithm_practice/blob/master/dfs/maximum_score_from_performing_multiplication_operations.py,26.0
