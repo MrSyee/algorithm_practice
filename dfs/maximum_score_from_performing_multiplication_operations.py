@@ -54,3 +54,19 @@ class Solution:
             sum_f = multipliers[0] * nums[0] + self.maximumScore(nums[1:], multipliers[1:])
             sum_b = multipliers[0] * nums[-1] + self.maximumScore(nums[:-1], multipliers[1:])
             return max(sum_f, sum_b)
+
+
+# use lru_cache limit
+class Solution:
+    def maximumScore(self, nums: List[int], multipliers: List[int]) -> int:
+        @lru_cache(2000)
+        def dfs(left, right, mul_idx):
+            if mul_idx == len(multipliers):
+                return 0
+
+            else:
+                sum_f = multipliers[mul_idx] * nums[left] + dfs(left + 1, right, mul_idx + 1)
+                sum_b = multipliers[mul_idx] * nums[right] + dfs(left, right - 1, mul_idx + 1)
+                return max(sum_f, sum_b)
+
+        return dfs(0, len(nums) - 1, 0)
