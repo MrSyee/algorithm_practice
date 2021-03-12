@@ -45,3 +45,26 @@ class Solution:
                     num_move += abs(target_idx - move_idx)
             ans.append(num_move)
         return ans
+
+
+# T_C: O(N)
+# S_C: O(1)
+class Solution:
+    def minOperations(self, boxes: str) -> List[int]:
+        num_ball, curr_cost = 0, 0
+        num_ball_rev, curr_cost_rev = 0, 0
+        ans = [0 for _ in range(len(boxes))]
+        
+        for idx, idx_rev in zip(range(len(boxes)), range(len(boxes) - 1, -1 ,-1)):
+            curr_cost += num_ball
+            curr_cost_rev += num_ball_rev
+            
+            ans[idx] += curr_cost
+            ans[idx_rev] += curr_cost_rev
+            
+            if boxes[idx] == "1":
+                num_ball += 1
+            if boxes[idx_rev] == "1":
+                num_ball_rev += 1
+                
+        return ans
