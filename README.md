@@ -38,3 +38,4 @@
 |25    |Merge Strings Alternately  |string    |[LeetCode](https://leetcode.com/problems/merge-strings-alternately)  |[Ans](https://github.com/MrSyee/algorithm_practice/blob/master/string/merge_strings_alternately.py)  |    +|
 |26    |Maximum Score from Performing Multiplication Operations  |dfs    |[LeetCode](https://leetcode.com/problems/maximum-score-from-performing-multiplication-operations)  |[Ans](https://github.com/MrSyee/algorithm_practice/blob/master/dfs/maximum_score_from_performing_multiplication_operations.py)  |    -!|
 |27    |Count Items Matching a Rule  |array    |[LeetCode](https://leetcode.com/problems/count-items-matching-a-rule)  |[Ans](https://github.com/MrSyee/algorithm_practice/blob/master/array/count_items_matching_a_rule.py)  |    +|
+|28    |Closest Dessert Cost  |dfs    |[LeetCode](https://leetcode.com/problems/closest-dessert-cost)  |[Ans](https://github.com/MrSyee/algorithm_practice/blob/master/dfs/closest_dessert_cost.py)  |    -!|
