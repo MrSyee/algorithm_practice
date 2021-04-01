@@ -32,3 +32,4 @@
 30,Equal Sum Arrays With Minimum Number of Operations,greedy,https://leetcode.com/problems/equal-sum-arrays-with-minimum-number-of-operations,https://github.com/MrSyee/algorithm_practice/blob/master/greedy/equal_sum_arrays_with_minimum_number_of_operations.py,30.0
 31,Minimum Elements to Add to Form a Given Sum,greedy,https://leetcode.com/problems/minimum-elements-to-add-to-form-a-given-sum,https://github.com/MrSyee/algorithm_practice/blob/master/greedy/minimum_elements_to_add_to_form_a_given_sum.py,31.0
 32,Number of Restricted Paths From First to Last Node,graph,https://leetcode.com/problems/number-of-restricted-paths-from-first-to-last-node,https://github.com/MrSyee/algorithm_practice/blob/master/graph/number_of_restricted_paths_from_first_to_last_node.py,32.0
+33,Maximum Ascending Subarray Sum,array,https://leetcode.com/problems/maximum-ascending-subarray-sum,https://github.com/MrSyee/algorithm_practice/blob/master/array/maximum_ascending_subarray_sum.py,33.0
