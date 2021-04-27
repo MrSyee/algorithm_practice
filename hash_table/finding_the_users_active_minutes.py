@@ -1,14 +1,7 @@
 """
-1817. Finding the Users Active Minutes
-Medium
+1817. Finding the Users Active Minutes (Medium)
+https://leetcode.com/problems/finding-the-users-active-minutes/
 
-109
-
-28
-
-Add to List
-
-Share
 You are given the logs for users' actions on LeetCode, and an integer k. The logs are represented by a 2D integer array logs where each logs[i] = [IDi, timei] indicates that the user with IDi performed an action at the minute timei.
 
 Multiple users can perform actions simultaneously, and a single user can perform multiple actions in the same minute.
@@ -47,6 +40,8 @@ Constraints:
 1 <= timei <= 10^5
 k is in the range [The maximum UAM for a user, 105^].
 """
+
+
 class Solution:
     def findingUsersActiveMinutes(self, logs: List[List[int]], k: int) -> List[int]:
         ans = [0] * k
@@ -57,5 +52,5 @@ class Solution:
 
         for key, val in uam_dict.items():
             ans[len(set(val)) - 1] += 1
-        
+
         return ans

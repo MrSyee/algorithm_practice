@@ -34,7 +34,7 @@
 32,Number of Restricted Paths From First to Last Node,graph,https://leetcode.com/problems/number-of-restricted-paths-from-first-to-last-node,https://github.com/MrSyee/algorithm_practice/blob/master/graph/number_of_restricted_paths_from_first_to_last_node.py,32.0
 33,Maximum Ascending Subarray Sum,array,https://leetcode.com/problems/maximum-ascending-subarray-sum,https://github.com/MrSyee/algorithm_practice/blob/master/array/maximum_ascending_subarray_sum.py,33.0
 34,Number of Orders in the Backlog,heap,https://leetcode.com/problems/number-of-orders-in-the-backlog,https://github.com/MrSyee/algorithm_practice/blob/master/heap/number_of_orders_in_the_backlog.py,34.0
-35,"Truncate Sentence
-",string,Eas,https://github.com/MrSyee/algorithm_practice/blob/master/string/truncate_sentence.py,35.0
-36,"Finding the Users Active Minutes
-",hash_table,Mediu,https://github.com/MrSyee/algorithm_practice/blob/master/hash_table/finding_the_users_active_minutes.py,36.0
+35,Truncate Sentence,string,https://leetcode.com/problems/truncate-sentence,https://github.com/MrSyee/algorithm_practice/blob/master/string/truncate_sentence.py,35.0
+36,Find the Winner of the Circular Game,array,https://leetcode.com/problems/find-the-winner-of-the-circular-game,https://github.com/MrSyee/algorithm_practice/blob/master/array/find_the_winner_of_the_circular_game.py,36.0
+37,Sign of the Product of an Array,math,https://leetcode.com/problems/sign-of-the-product-of-an-array,https://github.com/MrSyee/algorithm_practice/blob/master/math/sign_of_the_product_of_an_array.py,37.0
+38,Finding the Users Active Minutes,hash_table,https://leetcode.com/problems/finding-the-users-active-minutes,https://github.com/MrSyee/algorithm_practice/blob/master/hash_table/finding_the_users_active_minutes.py,38.0

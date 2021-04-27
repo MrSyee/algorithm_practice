@@ -45,7 +45,7 @@
 |32    |Number of Restricted Paths From First to Last Node  |graph    |[LeetCode](https://leetcode.com/problems/number-of-restricted-paths-from-first-to-last-node)  |[Ans](https://github.com/MrSyee/algorithm_practice/blob/master/graph/number_of_restricted_paths_from_first_to_last_node.py)  |    -!|
 |33    |Maximum Ascending Subarray Sum  |array    |[LeetCode](https://leetcode.com/problems/maximum-ascending-subarray-sum)  |[Ans](https://github.com/MrSyee/algorithm_practice/blob/master/array/maximum_ascending_subarray_sum.py)  |    +!|
 |34    |Number of Orders in the Backlog  |heap    |[LeetCode](https://leetcode.com/problems/number-of-orders-in-the-backlog)  |[Ans](https://github.com/MrSyee/algorithm_practice/blob/master/heap/number_of_orders_in_the_backlog.py)  |    -!|
-|35    |Truncate Sentence
-  |string    |[LeetCode](Eas)  |[Ans](https://github.com/MrSyee/algorithm_practice/blob/master/string/truncate_sentence.py)  |    +|
-|36    |Finding the Users Active Minutes
-  |hash_table    |[LeetCode](Mediu)  |[Ans](https://github.com/MrSyee/algorithm_practice/blob/master/hash_table/finding_the_users_active_minutes.py)  |    -|
+|35    |Truncate Sentence  |string    |[LeetCode](https://leetcode.com/problems/truncate-sentence)  |[Ans](https://github.com/MrSyee/algorithm_practice/blob/master/string/truncate_sentence.py)  |    +|
+|36    |Find the Winner of the Circular Game  |array    |[LeetCode](https://leetcode.com/problems/find-the-winner-of-the-circular-game)  |[Ans](https://github.com/MrSyee/algorithm_practice/blob/master/array/find_the_winner_of_the_circular_game.py)  |    +!|
+|37    |Sign of the Product of an Array  |math    |[LeetCode](https://leetcode.com/problems/sign-of-the-product-of-an-array)  |[Ans](https://github.com/MrSyee/algorithm_practice/blob/master/math/sign_of_the_product_of_an_array.py)  |    +|
+|38    |Finding the Users Active Minutes  |hash_table    |[LeetCode](https://leetcode.com/problems/finding-the-users-active-minutes)  |[Ans](https://github.com/MrSyee/algorithm_practice/blob/master/hash_table/finding_the_users_active_minutes.py)  |    -|
