@@ -38,6 +38,8 @@ Constraints:
 """
 
 
+# TC: O(N)
+# SC: O(1)
 class Solution:
     def arraySign(self, nums: List[int]) -> int:
         neg_cnt = 0
