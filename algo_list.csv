@@ -38,3 +38,4 @@
 36,Find the Winner of the Circular Game,array,https://leetcode.com/problems/find-the-winner-of-the-circular-game,https://github.com/MrSyee/algorithm_practice/blob/master/array/find_the_winner_of_the_circular_game.py,36.0
 37,Sign of the Product of an Array,math,https://leetcode.com/problems/sign-of-the-product-of-an-array,https://github.com/MrSyee/algorithm_practice/blob/master/math/sign_of_the_product_of_an_array.py,37.0
 38,Finding the Users Active Minutes,hash_table,https://leetcode.com/problems/finding-the-users-active-minutes,https://github.com/MrSyee/algorithm_practice/blob/master/hash_table/finding_the_users_active_minutes.py,38.0
+39,Letter Combinations of a Phone Number,dfs,https://leetcode.com/problems/letter-combinations-of-a-phone-number,https://github.com/MrSyee/algorithm_practice/blob/master/dfs/letter_combinations_of_a_phone_number.py,39.0
