@@ -50,3 +50,4 @@
 |37    |Sign of the Product of an Array  |math    |[LeetCode](https://leetcode.com/problems/sign-of-the-product-of-an-array)  |[Ans](https://github.com/MrSyee/algorithm_practice/blob/master/math/sign_of_the_product_of_an_array.py)  |    +|
 |38    |Finding the Users Active Minutes  |hash_table    |[LeetCode](https://leetcode.com/problems/finding-the-users-active-minutes)  |[Ans](https://github.com/MrSyee/algorithm_practice/blob/master/hash_table/finding_the_users_active_minutes.py)  |    -|
 |39    |Letter Combinations of a Phone Number  |dfs    |[LeetCode](https://leetcode.com/problems/letter-combinations-of-a-phone-number)  |[Ans](https://github.com/MrSyee/algorithm_practice/blob/master/dfs/letter_combinations_of_a_phone_number.py)  |    -!|
+|40    |Sum of Digits in Base K  |math    |[LeetCode](https://leetcode.com/problems/sum-of-digits-in-base-k)  |[Ans](https://github.com/MrSyee/algorithm_practice/blob/master/math/sum_of_digits_in_base_k.py)  |    +!|
