@@ -42,3 +42,4 @@
 40,Sum of Digits in Base K,math,https://leetcode.com/problems/sum-of-digits-in-base-k,https://github.com/MrSyee/algorithm_practice/blob/master/math/sum_of_digits_in_base_k.py,40.0
 41,Minimum Adjacent Swaps to Reach the Kth Smallest Number,greedy,https://leetcode.com/problems/minimum-adjacent-swaps-to-reach-the-kth-smallest-number,https://github.com/MrSyee/algorithm_practice/blob/master/greedy/minimum_adjacent_swaps_to_reach_the_kth_smallest_number.py,41.0
 42,Maximum Distance Between a Pair of Values,search,https://leetcode.com/problems/maximum-distance-between-a-pair-of-values,https://github.com/MrSyee/algorithm_practice/blob/master/search/maximum_distance_between_a_pair_of_value.py,42.0
+43,Reverse Integer,math,https://leetcode.com/problems/reverse-intege,https://github.com/MrSyee/algorithm_practice/blob/master/math/reverse.py,43.0
