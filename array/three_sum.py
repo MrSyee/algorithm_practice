@@ -19,6 +19,7 @@ A solution set is:
 ]
 """
 
+
 class Solution:
     def threeSum(self, nums: List[int]) -> List[List[int]]:
         """O(N^3)/O(1)"""
@@ -28,7 +29,7 @@ class Solution:
             for j in range(i + 1, length):
                 for k in range(j + 1, length):
                     tmp = sorted([nums[i], nums[j], nums[k]])
-                    if sum(tmp) == 0 and tmp not in sol: 
+                    if sum(tmp) == 0 and tmp not in sol:
                         sol.append(tmp)
         return sol
 
@@ -39,20 +40,20 @@ class Solution:
         sol = []
         nums.sort()
         n = len(nums)
-        
+
         if n < 3:
             return []
-        
+
         for i in range(n - 2):
             if nums[i] > 0:
                 break
-                    
-            if i > 0 and nums[i-1] == nums[i]:
+
+            if i > 0 and nums[i - 1] == nums[i]:
                 continue
-                
+
             l_idx = i + 1
             r_idx = n - 1
-            
+
             while l_idx < r_idx:
                 s = nums[i] + nums[l_idx] + nums[r_idx]
                 if s < 0:
@@ -65,8 +66,8 @@ class Solution:
                         l_idx += 1
                     while r_idx > i + 1 and nums[r_idx - 1] == nums[r_idx]:
                         r_idx -= 1
-                        
+
                     l_idx += 1
                     r_idx -= 1
-                    
+
         return sol

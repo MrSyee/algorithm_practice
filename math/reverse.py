@@ -7,10 +7,11 @@ Given a signed 32-bit integer x, return x with its digits reversed. If reversing
 Assume the environment does not allow you to store 64-bit integers (signed or unsigned).
 """
 
+
 class Solution:
     def reverse(self, x: int) -> int:
         negative = x < 0
         rev = int(str(abs(x))[-1::-1])
         if negative:
             rev *= -1
-        return rev if -2 ** 31 <= rev <= 2 ** 31 - 1 else 0
+        return rev if -(2**31) <= rev <= 2**31 - 1 else 0

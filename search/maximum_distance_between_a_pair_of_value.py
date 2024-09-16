@@ -44,6 +44,8 @@ Constraints:
 1 <= nums1[i], nums2[j] <= 105
 Both nums1 and nums2 are non-increasing.
 """
+
+
 # TLE
 # TC: O(N^2)
 # SC: O(1)
@@ -56,6 +58,7 @@ class Solution:
                 if nums1[i] <= nums2[j]:
                     max_dist = max(max_dist, j - i)
         return max_dist
+
 
 # Binary search
 # TC: O(N logN), 3292 ms (faster than 5.04%)

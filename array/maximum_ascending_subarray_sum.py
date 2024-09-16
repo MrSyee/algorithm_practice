@@ -36,6 +36,8 @@ Constraints:
 1 <= nums.length <= 100
 1 <= nums[i] <= 100
 """
+
+
 # O(N^2) ~ O(N^3), 360 ms
 class Solution:
     def maxAscendingSum(self, nums: List[int]) -> int:
@@ -43,23 +45,24 @@ class Solution:
         # two pointer
         for i in range(len(nums)):
             for j in range(i, len(nums)):
-                ns = nums[i:j+1]
+                ns = nums[i : j + 1]
                 # 오름차순인지 체크
                 if all([x < y for x, y in zip(ns[:-1], ns[1:])]):
                     ans = max(ans, sum(ns))
-                    
+
         return ans
+
 
 # O(N), 32 ms
 class Solution:
     def maxAscendingSum(self, nums: List[int]) -> int:
         sum_subarr = nums[0]
         ans = nums[0]
-        
+
         for i in range(len(nums) - 1):
-            if nums[i] < nums[i+1]:
-                sum_subarr += nums[i+1]
+            if nums[i] < nums[i + 1]:
+                sum_subarr += nums[i + 1]
             else:
-                sum_subarr = nums[i+1]
+                sum_subarr = nums[i + 1]
             ans = max(ans, sum_subarr)
         return ans

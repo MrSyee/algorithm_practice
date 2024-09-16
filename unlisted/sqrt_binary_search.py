@@ -21,6 +21,7 @@ Constraints:
 0 <= x <= 2^31 - 1
 """
 
+
 class Solution:
     def mySqrt(self, x: int) -> int:
         if x < 2:
@@ -30,12 +31,12 @@ class Solution:
         ans = end
         while start < end:
             mid = (start + end) // 2
-            if mid ** 2 > x:
+            if mid**2 > x:
                 end = mid
-            elif mid ** 2 < x:
+            elif mid**2 < x:
                 ans = mid
                 start = mid + 1
             else:
                 return mid
-                
+
         return ans

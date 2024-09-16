@@ -39,6 +39,8 @@ adjacentPairs[i].length == 2
 -10^5 <= nums[i], ui, vi <= 10^5
 There exists some nums that has adjacentPairs as its pairs.
 """
+
+
 # T_C: O(N)
 # S_C: O(N)
 class Solution:
@@ -49,7 +51,7 @@ class Solution:
             else:
                 a_dict[key] = [val]
             return a_dict
-        
+
         adjacent_dict = dict()
         for ad in adjacentPairs:  # O(n)
             adjacent_dict = add_to_dict(adjacent_dict, ad[0], ad[1])
@@ -60,21 +62,21 @@ class Solution:
         for k, v in adjacent_dict.items():
             if len(v) == 1:
                 adj_only_one.append(k)
-        
+
         # 0으로 채워진 리스트를 만든다.
         ans = []
         for _ in range(len(adjacentPairs) + 1):
             ans.append(0)
-        
+
         # 연결된 숫자가 하나인 수를 양 끝에 채운다.
         ans[0] = adj_only_one[0]
         ans[-1] = adj_only_one[1]
-        
+
         # 맨 앞 수부터 연결된 숫자를 하나씩 채워간다.
         # 채워진 숫자는 연결된 숫자에서 지운다.
         for i in range(len(ans) - 1):
             adj = adjacent_dict[ans[i]][0]
             adjacent_dict[adj].remove(ans[i])
-            ans[i+1] = adj
-            
+            ans[i + 1] = adj
+
         return ans

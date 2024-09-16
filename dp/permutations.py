@@ -17,17 +17,19 @@ Output:
   [3,2,1]
 ]
 """
+
+
 class Solution:
     def permute(self, nums: List[int]) -> List[List[int]]:
         """O(N!) / O(N), Backtracking."""
         sol, N = [], len(nums)
-        
+
         def backtracking(remains, curr):
             if len(curr) == N:
                 sol.append(curr)
                 return
             for i in range(len(remains)):
-                backtracking(remains[:i] + remains[i+1:], curr + [remains[i]])
-        
+                backtracking(remains[:i] + remains[i + 1 :], curr + [remains[i]])
+
         backtracking(nums, [])
         return sol

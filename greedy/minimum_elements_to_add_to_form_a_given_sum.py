@@ -28,6 +28,8 @@ Constraints:
 -limit <= nums[i] <= limit
 -10^9 <= goal <= 10^9
 """
+
+
 # T_C: O(n), sum이 O(n)?
 # S_C: O(1)
 class Solution:
@@ -35,7 +37,7 @@ class Solution:
         diff = goal - sum(nums)
         if diff == 0:
             return 0
-        
+
         if abs(diff) >= limit:
             ans = ceil(abs(diff / limit))
         else:

@@ -33,6 +33,7 @@ ruleKey is equal to either "type", "color", or "name".
 All strings consist only of lowercase letters.
 """
 
+
 # T_C: O(N)
 # S_C: O(1)
 class Solution:

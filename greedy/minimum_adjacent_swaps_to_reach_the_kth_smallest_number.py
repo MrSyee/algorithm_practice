@@ -48,6 +48,8 @@ Constraints:
 num only consists of digits.
 
 """
+
+
 class Solution:
     def getMinSwaps(self, num: str, k: int) -> int:
         def get_next_permutation(num: List[int]) -> List[int]:
@@ -55,13 +57,13 @@ class Solution:
             # S_C: O(1)
             # num[i] < num[i+1]을 만족하는 가장 큰 i를 찾는다.
             swap_i = -1
-            for i in range(len(num)-1):
-                if num[i] < num[i+1]:
+            for i in range(len(num) - 1):
+                if num[i] < num[i + 1]:
                     swap_i = i
 
             # num[swap_i] < num[j]를 만족하는 가장 큰 j를 찾는다.
             swap_j = -1
-            for j in range(len(num)-1, swap_i, -1):
+            for j in range(len(num) - 1, swap_i, -1):
                 if num[swap_i] < num[j]:
                     swap_j = j
                     break
@@ -69,7 +71,7 @@ class Solution:
             num[swap_i], num[swap_j] = num[swap_j], num[swap_i]
 
             # num[swap_i + 1:]을 reverse 정렬한다.
-            num[swap_i+1:] = reversed(num[swap_i+1:])
+            num[swap_i + 1 :] = reversed(num[swap_i + 1 :])
 
             return num
 
@@ -85,11 +87,14 @@ class Solution:
                     while origin[origin_idx] != target[target_idx]:
                         target_idx += 1
                     while target[origin_idx] != target[target_idx]:
-                        target[target_idx], target[target_idx-1] = target[target_idx-1], target[target_idx]
+                        target[target_idx], target[target_idx - 1] = (
+                            target[target_idx - 1],
+                            target[target_idx],
+                        )
                         target_idx -= 1
                         swaps += 1
             return swaps
-        
+
         # Main
         origin = [int(n) for n in num]
         target = [int(n) for n in num]
@@ -98,7 +103,5 @@ class Solution:
             target = get_next_permutation(target)
         # swap 횟수를 구한다.
         swaps = calculate_adjacent_swaps(origin, target)
-        
+
         return swaps
-            
-        

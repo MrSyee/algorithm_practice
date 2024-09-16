@@ -44,6 +44,7 @@ Constraints:
 1 <= maxOperations, nums[i] <= 10^9
 """
 
+
 # 실패. 제일 큰 값 반으로 나누는 전략
 class Solution:
     def minimumSize(self, nums: List[int], maxOperations: int) -> int:
@@ -55,13 +56,13 @@ class Solution:
                 h1 = num // 2
                 h2 = h1
             return h1, h2
-        
+
         # O(maxOperations)
         while maxOperations > 0:
             max_val = max(nums)
             nums.remove(max_val)
             nums.extend(devide_half(max_val))
-            
+
             maxOperations -= 1
             print(nums)
 
@@ -81,7 +82,7 @@ class Solution:
             for n in nums:
                 total_oper += n // target - int(n % target == 0)
             return total_oper
-        
+
         start, end = 1, max(nums)
         ans = end
         # O(log(max(nums)))

@@ -38,6 +38,8 @@ Constraints:
 1 <= nums1.length, nums2.length <= 105
 1 <= nums1[i], nums2[i] <= 6
 """
+
+
 # 1452 ms
 # T_C: O(n1 + n2)
 # S_C: O(1)
@@ -52,13 +54,13 @@ class Solution:
         nums2 = sorted(nums2)[::-1]
         diff = sum(nums2) - sum(nums1)
         max_len = len(nums1) + len(nums2)
-        
+
         # 갭이 큰 숫자부터 줄이거나 늘린다.
         i1 = i2 = 0
         while i1 + i2 < max_len:
             gap1 = 6 - nums1[i1] if len(nums1) > i1 else -1
             gap2 = nums2[i2] - 1 if len(nums2) > i2 else -1
-            
+
             if gap1 >= gap2:
                 diff = diff - gap1
                 i1 += 1
@@ -75,28 +77,28 @@ class Solution:
     def minOperations(self, nums1: List[int], nums2: List[int]) -> int:
         sums = [sum(nums1), sum(nums2)]
         nums = [nums1, nums2]
-        
+
         if sums[1] < sums[0]:
             sums = [sums[1], sums[0]]
             nums = [nums2, nums1]
-            
+
         difference = sums[1] - sums[0]
         output = 0
         difference_reduction_to_frequency = [0] * 6
         for number in nums[0]:
             difference_reduction_to_frequency[6 - number] += 1
-            
+
         for number in nums[1]:
             difference_reduction_to_frequency[number - 1] += 1
-            
+
         for difference_reduction in range(5, 0, -1):
             frequency = difference_reduction_to_frequency[difference_reduction]
             total_difference_reduction = difference_reduction * frequency
-            
+
             if total_difference_reduction >= difference:
                 return output + ceil(difference / difference_reduction)
             else:
                 output += frequency
                 difference -= total_difference_reduction
-                
+
         return -1

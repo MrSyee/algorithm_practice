@@ -43,10 +43,12 @@ class Node:
         self.next = next
         self.random = random
 """
+
+
 class Solution:
-    def copyRandomList(self, head: 'Node') -> 'Node':
+    def copyRandomList(self, head: "Node") -> "Node":
         """Fail. O(N)/O(N)
-           If the key of val2idx is duplicated, it outputs wrong answer.
+        If the key of val2idx is duplicated, it outputs wrong answer.
         """
         node_list = []
         randval_list = []
@@ -65,15 +67,15 @@ class Solution:
                 val2idx[head.val] = i
             head = head.next
             i += 1
-        
+
         for i, randval in enumerate(randval_list):
             node_list[i].random = node_list[val2idx[randval]] if randval else None
-        
+
         return node_list[0] if node_list else None
 
 
 class Solution:
-    def copyRandomList(self, head: 'Node') -> 'Node':
+    def copyRandomList(self, head: "Node") -> "Node":
         """O(N)/O(N)"""
         old1 = old2 = head
         old2new = {None: None}
@@ -86,9 +88,9 @@ class Solution:
             prev_node = new_node
             old1 = old1.next
             i += 1
-        
+
         while old2:
             old2new[old2].random = old2new[old2.random]
             old2 = old2.next
-        
+
         return old2new[head]

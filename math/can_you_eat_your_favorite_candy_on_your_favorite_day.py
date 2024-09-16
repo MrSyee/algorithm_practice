@@ -42,16 +42,17 @@ queries[i].length == 3
 1 <= dailyCapi <= 10^9
 """
 
+
 # 하루에 먹을수 있는 개수를 한 가지 수로 고정했을 때만 구함
 class Solution:
     def canEat(self, candiesCount: List[int], queries: List[List[int]]) -> List[bool]:
         ans = []
         for query in queries:  # O(queries)
             target_type, target_day, day_cap = query
-            
+
             n_target = candiesCount[target_type]
             n_candies = sum(candiesCount[:target_type])
-            
+
             cap = 1
             is_eat = False
             while cap <= day_cap:  # O(queries * day_cap)
@@ -72,17 +73,17 @@ class Solution:
         for target_type, target_day, day_cap in queries:  # O(queries)
             n_target = candiesCount[target_type]
             n_smaller_candies = sum(candiesCount[:target_type])  # O(target_type)
-            
+
             is_eat = False
             # eariest
             eariest_day = n_smaller_candies // day_cap
             # latest
             latest_day = n_smaller_candies + n_target
-            
+
             if eariest_day <= target_day < latest_day:  # latest day 등호 안됨
                 is_eat = True
             ans.append(is_eat)
-        
+
         return ans
 
 
@@ -105,9 +106,9 @@ class Solution:
                 eariest_day = 0
             # latest
             latest_day = accum_candies[target_type]
-            
+
             if eariest_day <= target_day < latest_day:
                 is_eat = True
             ans.append(is_eat)
-        
+
         return ans

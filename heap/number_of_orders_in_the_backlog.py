@@ -47,6 +47,8 @@ orders[i].length == 3
 1 <= pricei, amounti <= 109
 orderTypei is either 0 or 1.
 """
+
+
 class Solution:
     def getNumberOfBacklogOrders(self, orders: List[List[int]]) -> int:
         buy_backlog = []  # max heap
@@ -62,7 +64,7 @@ class Solution:
                     else:
                         heapq.heappop(buy_backlog)
                         amount -= buy_amount
-                    
+
                 # add to sell
                 if amount > 0:
                     heapq.heappush(sell_backlog, [price, amount])
@@ -77,10 +79,9 @@ class Solution:
                     else:
                         heapq.heappop(sell_backlog)
                         amount -= sell_amount
-                    
+
                 # add to buy
                 if amount > 0:
                     heapq.heappush(buy_backlog, [-price, amount])
                 vs
         return sum(a for _, a in buy_backlog + sell_backlog) % ((10**9) + 7)
-                    

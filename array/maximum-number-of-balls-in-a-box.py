@@ -41,6 +41,8 @@ Constraints:
 1 <= lowLimit <= highLimit <= 10^5
 
 """
+
+
 class Solution:
     def countBalls(self, lowLimit: int, highLimit: int) -> int:
         num_dict = {}
@@ -48,7 +50,7 @@ class Solution:
             s = 0
             for n in str(num):  # O(log_10(num)). 자리수 분해하여 덧셈
                 s += int(n)
-                
+
             if s in num_dict:  # dict로 개수 계산
                 num_dict[s] += 1
             else:

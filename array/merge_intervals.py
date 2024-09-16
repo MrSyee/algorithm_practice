@@ -17,6 +17,7 @@ Explanation: Intervals [1,4] and [4,5] are considered overlapping.
 NOTE: input types have been changed on April 15, 2019. Please reset to default code definition to get new method signature.
 """
 
+
 class Solution:
     def merge(self, intervals: List[List[int]]) -> List[List[int]]:
         """Fail"""
@@ -25,16 +26,16 @@ class Solution:
             return sol
         elif len(intervals) == 1:
             return intervals
-        
+
         first_val, last_val = intervals[0]
         for i in range(1, len(intervals)):
             next_ = intervals[i]
             if first_val > next_[0]:
                 first_val = next_[0]
-            
+
             if last_val > next_[1]:
                 last_val = next_[1]
-            
+
             if last_val < next_[0]:
                 sol.append([first_val, last_val])
                 first_val, last_val = next_
@@ -44,7 +45,7 @@ class Solution:
                 last_val = next_[1]
                 if i == len(intervals) - 1:
                     sol.append([first_val, last_val])
-        
+
         return sol
 
 
@@ -56,11 +57,11 @@ class Solution:
             return sol
         elif len(intervals) == 1:
             return intervals
-        
+
         # sorting by first value of sub list
         intervals.sort(key=lambda x: x[0])
         first_val, last_val = intervals[0]
-        for i in range(1, len(intervals)): 
+        for i in range(1, len(intervals)):
             next_ = intervals[i]
             if last_val < next_[0]:
                 # no merge
@@ -69,11 +70,11 @@ class Solution:
             elif last_val < next_[1]:
                 # merge
                 last_val = next_[1]
-            
+
             # last idx
             if i == len(intervals) - 1:
                 sol.append([first_val, last_val])
-        
+
         return sol
 
 

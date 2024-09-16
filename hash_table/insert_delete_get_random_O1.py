@@ -36,14 +36,15 @@ randomSet.getRandom();
 
 import random
 
+
 class RandomizedSet:
     """Runtime: 432 ms"""
+
     def __init__(self):
         """
         Initialize your data structure here.
         """
         self.val_list = []
-        
 
     def insert(self, val: int) -> bool:
         """
@@ -72,15 +73,16 @@ class RandomizedSet:
 
 import random
 
+
 class RandomizedSet:
     """Runtime: 96 ms"""
+
     def __init__(self):
         """
         Initialize your data structure here.
         """
         self.val2idx = {}
         self.val_list = []
-        
 
     def insert(self, val: int) -> bool:
         """
@@ -100,9 +102,9 @@ class RandomizedSet:
             idx, last_element = self.val2idx[val], self.val_list[-1]
             self.val_list[idx] = last_element
             self.val2idx[last_element] = idx
-            
+
             self.val_list.pop()
-            del self.val2idx[val]     
+            del self.val2idx[val]
             return True
         return False
 

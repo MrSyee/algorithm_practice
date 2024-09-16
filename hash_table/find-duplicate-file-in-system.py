@@ -41,6 +41,7 @@ What is the time complexity of your modified solution? What is the most time-con
 How to make sure the duplicated files you find are not false positive?
 """
 
+
 class Solution:
     def findDuplicate(self, paths: List[str]) -> List[List[str]]:
         """O(N^2) / O(N)"""
@@ -48,17 +49,17 @@ class Solution:
         for path in paths:
             split_path = path.split()
             dir_name, files = split_path[0], split_path[1:]
-            
+
             for f in files:
                 file = f.split("(")[0]
                 content = f.split("(")[1].split(")")[0]
                 if not content in d:
                     d[content] = []
                 d[content].append(dir_name + "/" + file)
-        
+
         sol = []
         for k, v in d.items():
             if len(v) > 1:
                 sol.append(v)
-            
+
         return sol

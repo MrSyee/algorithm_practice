@@ -22,6 +22,7 @@ Explanation: The answer is "wke", with the length of 3.
 Note that the answer must be a substring, "pwke" is a subsequence and not a substring.
 """
 
+
 class Solution:
     def lengthOfLongestSubstring(self, s: str) -> int:
         """Time Limit Exceeded. O(N^2)/O(N)"""
@@ -31,7 +32,7 @@ class Solution:
         for idx in range(len(s)):
             l_idx = idx
             tmp_str = s[l_idx]
-            for r_idx in range(l_idx+1, len(s)):
+            for r_idx in range(l_idx + 1, len(s)):
                 if s[r_idx - 1] is not s[r_idx] and s[r_idx] not in tmp_str:
                     tmp_str += s[r_idx]
                 else:

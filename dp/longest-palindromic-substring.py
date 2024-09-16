@@ -15,6 +15,7 @@ Input: "cbbd"
 Output: "bb"
 """
 
+
 class Solution:
     def longestPalindrome(self, s: str) -> str:
         """O(N^2) / O(N), 8680 ms"""
@@ -23,7 +24,7 @@ class Solution:
         sol = ""
         for i in range(len(s)):
             for j in range(i, len(s)):
-                substring = s[i:j+1]
+                substring = s[i : j + 1]
                 if len(substring) is 1 and len(sol) < len(substring):
                     sol = substring
                 elif len(substring) % 2 is 0 and len(sol) < len(substring):
@@ -32,6 +33,6 @@ class Solution:
                         sol = substring
                 elif len(substring) % 2 is not 0 and len(sol) < len(substring):
                     half = len(substring) // 2
-                    if substring[:half] == substring[half+1:][::-1]:
+                    if substring[:half] == substring[half + 1 :][::-1]:
                         sol = substring
         return sol if sol else s

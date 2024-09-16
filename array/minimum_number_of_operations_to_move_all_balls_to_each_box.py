@@ -33,6 +33,8 @@ n == boxes.length
 boxes[i] is either '0' or '1'.
 
 """
+
+
 # T_C: O(N^2)
 # S_C: O(1)
 class Solution:
@@ -54,17 +56,17 @@ class Solution:
         num_ball, curr_cost = 0, 0
         num_ball_rev, curr_cost_rev = 0, 0
         ans = [0 for _ in range(len(boxes))]
-        
-        for idx, idx_rev in zip(range(len(boxes)), range(len(boxes) - 1, -1 ,-1)):
+
+        for idx, idx_rev in zip(range(len(boxes)), range(len(boxes) - 1, -1, -1)):
             curr_cost += num_ball
             curr_cost_rev += num_ball_rev
-            
+
             ans[idx] += curr_cost
             ans[idx_rev] += curr_cost_rev
-            
+
             if boxes[idx] == "1":
                 num_ball += 1
             if boxes[idx_rev] == "1":
                 num_ball_rev += 1
-                
+
         return ans

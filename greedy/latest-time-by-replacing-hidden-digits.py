@@ -31,13 +31,14 @@ time is in the format hh:mm.
 It is guaranteed that you can produce a valid time from the given string.
 """
 
+
 class Solution:
     def maximumTime(self, time: str) -> str:
         print(time)
         hh, mm = time.split(":")
         h1, h2 = hh[0], hh[1]
         m1, m2 = mm[0], mm[1]
-        
+
         if m1 == "?":
             m1 = "5"
         if m2 == "?":
@@ -53,5 +54,5 @@ class Solution:
                 h2 = "3"
             else:
                 h2 = "9"
-        
+
         return f"{h1}{h2}:{m1}{m2}"

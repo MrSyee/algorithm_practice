@@ -26,6 +26,8 @@ Constraints:
 2 <= k <= 10
 
 """
+
+
 # TC: O(log_2(100))
 # SC: O(1)
 class Solution:
@@ -34,7 +36,7 @@ class Solution:
         while n != 0:
             quotient = n // k
             remainder = n % k
-            
+
             ans += remainder
             n = quotient
 

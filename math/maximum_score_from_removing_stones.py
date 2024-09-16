@@ -46,9 +46,10 @@ Constraints:
 1 <= a, b, c <= 10^5
 """
 
+
 # T_C: O(max(a, b, c) * 3 * 3)
 # S_C: O(3)
-class Solution: 
+class Solution:
     def maximumScore(self, a: int, b: int, c: int) -> int:
         # O(3)
         def min_except_zero(list_: list):
@@ -58,24 +59,28 @@ class Solution:
                 tmp_list.remove(0)
                 minval = min(tmp_list)
             return minval
-        
+
         count = 0
         score = [a, b, c]
 
         # O(max(score)), 2개 이상의 값이 0이 되면 종료
-        while not ((score[0] + score[1]) == 0 or (score[1] + score[2]) == 0 or (score[0] + score[2]) == 0):
+        while not (
+            (score[0] + score[1]) == 0
+            or (score[1] + score[2]) == 0
+            or (score[0] + score[2]) == 0
+        ):
             # 가장 큰 값과 작은 값을 하나씩 줄인다.
             minidx = score.index(min_except_zero(score))
             maxidx = score.index(max(score))
-            
+
             if minidx == maxidx:
                 minidx = (minidx + 1) % len(score)
                 while score[minidx] == 0:
                     minidx = (minidx + 1) % len(score)
-            
+
             score[minidx] = score[minidx] - 1
             score[maxidx] = score[maxidx] - 1
-            
+
             count += 1
 
         return count

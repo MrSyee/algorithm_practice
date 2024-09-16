@@ -5,9 +5,14 @@ import pandas as pd
 def get_algo_list():
     # Get python filename list
     filelist = list()
-    for (dirpath, dirnames, filenames) in os.walk("."):
+    for dirpath, dirnames, filenames in os.walk("."):
         for file in filenames:
-            if ".py" in file and "unlisted" not in dirpath and file != "update_readme.py":
+            if (
+                ".py" in file
+                and "unlisted" not in dirpath
+                and file != "update_readme.py"
+                and file != ".python-version"
+            ):
                 filelist += [os.path.join(dirpath, file)]
 
     # Get algorithms list from filepaths
@@ -20,7 +25,10 @@ def get_algo_list():
             title = line1.split(". ")[1].split(" (")[0]
             category = filepath.split("/")[1]
             leetcode_link = opend_file[2][:-2]
-            answer_link = "https://github.com/MrSyee/algorithm_practice/blob/master/" + filepath[2:]
+            answer_link = (
+                "https://github.com/MrSyee/algorithm_practice/blob/master/"
+                + filepath[2:]
+            )
             algo_list.append(
                 dict(
                     name=title,
@@ -72,7 +80,7 @@ if __name__ == "__main__":
             new_row["idx"] = idx
             idx += 1
 
-            curr_algo_df = curr_algo_df.append(new_row, ignore_index=True)
+            curr_algo_df = curr_algo_df._append(new_row, ignore_index=True)
         curr_algo_df.to_csv(csv_path)
 
         update_markdown(new_list)

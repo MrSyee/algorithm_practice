@@ -56,11 +56,15 @@ m == toppingCosts.length
 1 <= baseCosts[i], toppingCosts[i] <= 10^4
 1 <= target <= 10^4
 """
+
+
 # DFS + generator (2328 ms)
 # T_C: O(n * 3^m)
 # S_C: 1
 class Solution:
-    def closestCost(self, baseCosts: List[int], toppingCosts: List[int], target: int) -> int:
+    def closestCost(
+        self, baseCosts: List[int], toppingCosts: List[int], target: int
+    ) -> int:
         def calculate_cost(cost: int, curr_pos: int):
             if curr_pos == len(toppingCosts):
                 yield cost
@@ -69,11 +73,12 @@ class Solution:
             yield from calculate_cost(cost, curr_pos + 1)
             yield from calculate_cost(cost + topping_cost, curr_pos + 1)
             yield from calculate_cost(cost + topping_cost * 2, curr_pos + 1)
-        
+
         ans = float("inf")
         for base_cost in baseCosts:
             for cost in calculate_cost(base_cost, 0):
-                if (abs(target - cost) < abs(target - ans)) or (abs(target - cost) == abs(target - ans) and cost < ans):
+                if (abs(target - cost) < abs(target - ans)) or (
+                    abs(target - cost) == abs(target - ans) and cost < ans
+                ):
                     ans = cost
         return ans
-

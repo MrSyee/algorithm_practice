@@ -26,6 +26,7 @@ Constraints:
 s​​​​​​ consists only of lowercase English letters.
 """
 
+
 # T_C: O(N^2)
 # S_C: O(N^2)
 class Solution:
@@ -34,22 +35,26 @@ class Solution:
         is_palindrome = []
         for _ in range(len(s)):
             is_palindrome.append([False for _ in range(len(s))])
-        
+
         # O(N). len 1, 2 pelindrome 여부 체크
         for i in range(len(s)):
             is_palindrome[i][i] = True
-            if i < len(s)- 1 and s[i] == s[i+1]:
-                is_palindrome[i][i+1] = True
-        
+            if i < len(s) - 1 and s[i] == s[i + 1]:
+                is_palindrome[i][i + 1] = True
+
         # O(N^2). len >= 3 pelindrome 여부 체크
         for i in range(2, len(s)):
             for j in range(len(s) - i):
-                if s[j] == s[j+i] and is_palindrome[j+1][j+i-1]:
-                    is_palindrome[j][j+i] = True
-        
+                if s[j] == s[j + i] and is_palindrome[j + 1][j + i - 1]:
+                    is_palindrome[j][j + i] = True
+
         # O(N^2). 문자열 분리 위치 찾기
-        for i in range(0, len(s)-2):
+        for i in range(0, len(s) - 2):
             for j in range(1, len(s) - 1):
-                if is_palindrome[0][i] and is_palindrome[i+1][j] and is_palindrome[j+1][len(s)-1]:
+                if (
+                    is_palindrome[0][i]
+                    and is_palindrome[i + 1][j]
+                    and is_palindrome[j + 1][len(s) - 1]
+                ):
                     return True
         return False

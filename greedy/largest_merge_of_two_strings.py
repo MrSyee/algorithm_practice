@@ -37,6 +37,8 @@ Constraints:
 word1 and word2 consist only of lowercase English letters.
 
 """
+
+
 class Solution:
     def largestMerge(self, word1: str, word2: str) -> str:
         if word1 == "":
@@ -47,19 +49,19 @@ class Solution:
         idx1, idx2 = 0, 0
         merge = ""
         while not (idx1 == len(word1) or idx2 == len(word2)):
-            w1, w2 = word1[idx1], word2[idx2]               
+            w1, w2 = word1[idx1], word2[idx2]
             if w1 >= w2:
                 merge += w1
                 idx1 += 1
             elif w1 < w2:
                 merge += w2
                 idx2 += 1
-                
+
         if idx1 < len(word1):
             merge += word1[idx1:]
         elif idx2 < len(word2):
             merge += word2[idx2:]
-            
+
         return merge
 
 
@@ -73,15 +75,15 @@ class Solution:
             return word1
 
         merge = ""
-        while not (len(word1) == 0 or len(word2) == 0):              
+        while not (len(word1) == 0 or len(word2) == 0):
             if word1 >= word2:
                 merge += word1[0]
                 word1 = word1[1:]
             elif word1 < word2:
                 merge += word2[0]
                 word2 = word2[1:]
-                
+
         merge += word1
         merge += word2
-            
+
         return merge

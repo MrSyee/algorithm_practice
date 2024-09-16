@@ -40,6 +40,7 @@ Constraints:
 s consists of lowercase letters.
 """
 
+
 # T_C: O(len(s)) <  < O(len(s)^2)
 # S_C: O(1)
 class Solution:
@@ -53,11 +54,11 @@ class Solution:
                 right = left + plus_idx
                 if curr != s[right]:  # curr char와 다르면
                     left = right
-                    sol += (plus_idx * (plus_idx + 1)) // 2  # ex. len = 3: 3+2+1    
+                    sol += (plus_idx * (plus_idx + 1)) // 2  # ex. len = 3: 3+2+1
                     break
         last = right - left + 1
         sol += (last * (last + 1)) // 2
-        return int(sol % (1e9+7))
+        return int(sol % (1e9 + 7))
 
 
 # Discuss solution
@@ -66,12 +67,12 @@ class Solution:
 class Solution:
     def countHomogenous(self, s: str) -> int:
         arr = [1]
-        
-        for i in range(1,len(s)):
-            if s[i] == s[i-1]:
-                arr.append(arr[i-1]+1)
-                
+
+        for i in range(1, len(s)):
+            if s[i] == s[i - 1]:
+                arr.append(arr[i - 1] + 1)
+
             else:
                 arr.append(1)
-                
-        return int(sum(arr)%(1e9+7))
+
+        return int(sum(arr) % (1e9 + 7))

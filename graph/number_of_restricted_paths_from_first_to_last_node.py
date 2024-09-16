@@ -40,6 +40,8 @@ ui != vi
 There is at most one edge between any two nodes.
 There is at least one path between any two nodes.
 """
+
+
 class Solution:
     def countRestrictedPaths(self, n: int, edges: List[List[int]]) -> int:
         # dict로 graph 구조를 만든다.
@@ -47,31 +49,34 @@ class Solution:
         for u, v, w in edges:
             graph[u].update({v: w})
             graph[v].update({u: w})
-        
+
         # 각 노드들의 n 노드까지의 최소 거리를 구한다.
         distances = {node: float("inf") for node in graph}
         distances[n] = 0
         queue = []
         heapq.heappush(queue, [distances[n], n])
-        
+
         while queue:
             curr_distance, curr_node = heapq.heappop(queue)
-            
+
             if distances[curr_node] < curr_distance:
                 continue
-            
+
             for next_node, next_distance in graph[curr_node].items():
                 distance = curr_distance + next_distance
                 if distance < distances[next_node]:
                     distances[next_node] = distance
                     heapq.heappush(queue, [distance, next_node])
-        
+
         # DP: Memoization
         def dfs(node):
             if node == 1:
                 return 1
             if node not in memo:
-                memo[node] = sum(dfs(v) for v in graph[node].keys() if distances[v] > distances[node])
-            return memo[node] % (10 ** 9 + 7)
+                memo[node] = sum(
+                    dfs(v) for v in graph[node].keys() if distances[v] > distances[node]
+                )
+            return memo[node] % (10**9 + 7)
+
         memo = collections.defaultdict(int)
         return dfs(n)

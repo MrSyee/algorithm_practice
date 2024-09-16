@@ -17,14 +17,15 @@ Explanation:
 12 + 02 + 02 = 1
 """
 
+
 class Solution:
     def isHappy(self, n: int) -> bool:
         """O(N^2)/O(N)"""
         for _ in range(100):
-            nums = [int(s)for s in str(n)]
+            nums = [int(s) for s in str(n)]
             if sum(nums) == 1:
                 return True
-            n = sum([nn ** 2 for nn in nums])
+            n = sum([nn**2 for nn in nums])
         return False
 
 
@@ -36,5 +37,5 @@ class Solution:
             nums = [int(s) for s in str(n)]
             if sum(nums) == 1:
                 return True
-            n = sum([nn ** 2 for nn in nums])
+            n = sum([nn**2 for nn in nums])
         return False

@@ -37,14 +37,15 @@ a and b consist only of lowercase letters.
 
 from collections import Counter
 
+
 class Solution:
-    def minCharacters(self, a: str, b: str) -> int:        
+    def minCharacters(self, a: str, b: str) -> int:
         cnt_a, cnt_b = Counter(a), Counter(b)
         len_a, len_b = len(a), len(b)
 
         # dict는 +가 안되지만 Counter는 가능하다
         sol = len_a + len_b - max((cnt_a + cnt_b).values())  # cond3
-        
+
         less_a, less_b = 0, 0
         for i in range(25):  # a ~ y 까지. z보다 더 커질수 없기 때문에.
             # 현재 char보다 작은 char의 개수를 체크하기 위함.
@@ -55,5 +56,5 @@ class Solution:
             # B에서 a보다 작은 char를 b로 다 바꿔야함 (+ less_b)
             sol = min(sol, len_a - less_a + less_b)  # cond 1
             sol = min(sol, len_b - less_b + less_a)  # cond 2
-            
+
         return sol

@@ -23,12 +23,14 @@ Constraints:
 s[i]​​​​ is either '0' or '1'.
 s[0] is '1'.
 """
+
+
 class Solution:
     def checkOnesSegment(self, s: str) -> bool:
         # 없어도 되는데 있으면 좀 더 빠름
         if len(s) == 1 and s[0] == "1":
             return True
-        
+
         is_zero = False
         for i in range(len(s)):
             if s[i] == "0" and not is_zero:
