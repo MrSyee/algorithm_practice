@@ -55,3 +55,5 @@
 |42    |Maximum Distance Between a Pair of Values  |search    |[LeetCode](https://leetcode.com/problems/maximum-distance-between-a-pair-of-values)  |[Ans](https://github.com/MrSyee/algorithm_practice/blob/master/search/maximum_distance_between_a_pair_of_value.py)  |    -|
 |43    |Reverse Integer  |math    |[LeetCode](https://leetcode.com/problems/reverse-intege)  |[Ans](https://github.com/MrSyee/algorithm_practice/blob/master/math/reverse.py)  |    +|
 |44    |Jump Game  |array    |[LeetCode](https://leetcode.com/problems/jump-game/description/?envType=study-plan-v2&envId=top-interview-15)  |[Ans](https://github.com/MrSyee/algorithm_practice/blob/master/array/jump_game.py)  |    -!|
+|45    |Jump Game II  |array    |[LeetCode](You are given a 0-indexed array of integers nums of length n. You are initially positioned at nums[0])  |[Ans](https://github.com/MrSyee/algorithm_practice/blob/master/array/jump_game2.py)  |    -!|
+|46    |Insert Delete GetRandom O_1  |array    |[LeetCode](Implement the RandomizedSet class)  |[Ans](https://github.com/MrSyee/algorithm_practice/blob/master/array/insert_delete_getrandom.py)  |    -!|
