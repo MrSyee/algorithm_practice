@@ -52,3 +52,4 @@
 50,Rotate Image,matrix,https://leetcode.com/problems/rotate-image/description/?envType=study-plan-v2&envId=top-interview-15,https://github.com/MrSyee/algorithm_practice/blob/master/matrix/rotate_image.py,50.0
 51,Spiral Matrix,matrix,https://leetcode.com/problems/spiral-matrix/description/?source=submission-a,https://github.com/MrSyee/algorithm_practice/blob/master/matrix/spiral_matrix.py,51.0
 52,Valid Sudoku,matrix,https://leetcode.com/problems/valid-sudoku/description/?envType=study-plan-v2&envId=top-interview-15,https://github.com/MrSyee/algorithm_practice/blob/master/matrix/valid_sudoku.py,52.0
+53,Longest Consecutive Sequence,hash_table,https://leetcode.com/problems/longest-consecutive-sequence/description/?envType=study-plan-v2&envId=top-interview-15,https://github.com/MrSyee/algorithm_practice/blob/master/hash_table/longest_consecutive_sequence.py,53.0
