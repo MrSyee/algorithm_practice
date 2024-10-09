@@ -88,8 +88,33 @@ class Solution:
         return max(ans, right - left)
 
 """
-24.10.06 다시 풀어봄
+24.10.05 다시 풀어봄
 """
+# T_C: O(N * M)
+# S_C: O(1)
+# 305ms, 9.06%
+# 중복된 것이 나왔을 경우 left와 right를 모두 리셋하니 시간이 더 걸린다.
+class Solution:
+    def lengthOfLongestSubstring(self, s: str) -> int:
+        if s == "":
+            return 0
+
+        length = len(s)
+        left, right = 0, 0
+        ans = 0
+
+        substring = ""
+
+        while left <= right and right < length:
+            if s[right] not in substring:
+                substring += s[right]
+                right += 1
+            else:
+                ans = max(ans, right - left)
+                left += 1
+                right = left
+                substring = ""
+        return max(ans, right - left)
 
 # T_C: O(N)
 # S_C: O(1)
