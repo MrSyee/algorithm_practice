@@ -19,6 +19,15 @@ A solution set is:
 ]
 """
 
+"""
+# 풀이
+
+1. Two pointers 활용
+2. 정렬
+3. 중복 제거
+4. O(N^2)으로 해결
+"""
+
 
 class Solution:
     def threeSum(self, nums: List[int]) -> List[List[int]]:
