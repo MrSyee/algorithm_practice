@@ -56,3 +56,6 @@
 54,Summary Ranges,array,https://leetcode.com/problems/summary-ranges/description/?envType=study-plan-v2&envId=top-interview-15,https://github.com/MrSyee/algorithm_practice/blob/master/array/summary_ranges.py,54.0
 55,Number of Islands,graph,https://leetcode.com/problems/number-of-islands/description/?envType=study-plan-v2&envId=top-interview-15,https://github.com/MrSyee/algorithm_practice/blob/master/graph/number_of_islands.py,55.0
 56,Minimum Number of Arrows to Burst Balloons,greedy,https://leetcode.com/problems/minimum-number-of-arrows-to-burst-balloons/description/?envType=study-plan-v2&envId=top-interview-15,https://github.com/MrSyee/algorithm_practice/blob/master/greedy/minimum_number_of_arrows_to_burst_balloons.py,56.0
+57,Min Stack,stack,https://leetcode.com/problems/min-stack/description/?envType=study-plan-v2&envId=top-interview-15,https://github.com/MrSyee/algorithm_practice/blob/master/stack/min_stack.py,57.0
+58,Simplify Path,stack,https://leetcode.com/problems/simplify-path/description/?envType=study-plan-v2&envId=top-interview-15,https://github.com/MrSyee/algorithm_practice/blob/master/stack/simplify_path.py,58.0
+59,지게차와 크레인,bfs,https://school.programmers.co.kr/learn/courses/30/lessons/388353?language=python,https://github.com/MrSyee/algorithm_practice/blob/master/bfs/lift_and_crain.py,59.0

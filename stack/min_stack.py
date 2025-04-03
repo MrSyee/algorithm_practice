@@ -1,5 +1,5 @@
 """
-155. Min Stack(Medium)
+155. Min Stack (Medium)
 https://leetcode.com/problems/min-stack/description/?envType=study-plan-v2&envId=top-interview-150
 
 Design a stack that supports push, pop, top, and retrieving the minimum element in constant time.

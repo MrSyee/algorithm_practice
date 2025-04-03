@@ -10,6 +10,7 @@ def get_algo_list():
             if (
                 ".py" in file
                 and "unlisted" not in dirpath
+                and ".venv" not in dirpath
                 and file != "update_readme.py"
                 and file != ".python-version"
             ):
